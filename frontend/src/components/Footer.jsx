@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="text-sm text-center md:text-left">
           <p className="mb-2">Questions? Call 1-800-123-4567 Ask for Justin</p>
           <div className="flex flex-wrap justify-center md:justify-start gap-4">
-            <a href="#" className="hover:animate-bounce hover:text-red-500 hover:scale-125 hover:shadow-[0_0_20px_red] transition-all duration-300">
+            <a href="#" className="hover:scale-150 hover:rotate-[12deg] hover:skew-x-[15deg] hover:shadow-[0_0_0_5px_#00ff00] hover:invert hover:contrast-[400%] hover:brightness-[200%] hover:saturate-[300%] hover:hue-rotate-[270deg] transition-all duration-[600ms]">
               FAQ
             </a>
             <a href="#" className="hover:animate-bounce hover:scale-200 hover:rotate-12 hover:skew-x-12 hover:shadow-[0_0_100px_30px_rgba(255,0,0,0.9)] hover:text-yellow-400 hover:saturate-[300%] hover:contrast-200 transition-all duration-700">
