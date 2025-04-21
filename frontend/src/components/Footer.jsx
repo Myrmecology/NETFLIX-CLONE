@@ -14,7 +14,7 @@ const Footer = () => {
             <a href="#" className="hover:scale-150 hover:text-pink-400 hover:shadow-[0_0_50px_10px_pink] hover:rotate-6 hover:skew-y-3 hover:saturate-200 hover:hue-rotate-90 hover:contrast-200 transition-all duration-500">
               Locke & Key
             </a>
-            <a href="#" className="hover:animate-ping hover:scale-150 hover:rotate-12 hover:skew-y-6 hover:text-fuchsia-500 hover:shadow-[0_0_60px_20px_fuchsia] hover:saturate-200 hover:contrast-150 transition-all duration-500">
+            <a href="#" className="hover:animate-ping hover:scale-[1.75] hover:rotate-[20deg] hover:skew-y-[15deg] hover:text-rose-600 hover:shadow-[0_0_80px_30px_#ff0000] hover:invert hover:contrast-[300%] transition-all duration-700">
               NETFLIX
             </a>
             <a href="#" className="hover:animate-bounce hover:text-pink-500 hover:scale-150 hover:rotate-6 hover:shadow-[0_0_20px_#ff00ff] hover:saturate-200 hover:skew-y-3 transition-all duration-300">
