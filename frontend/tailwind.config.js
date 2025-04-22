@@ -13,6 +13,7 @@ export default {
         'jello': 'jello 1s ease-in-out',
         'spiral': 'spiral 2s ease-in-out infinite',
         'firework': 'firework 1.5s ease-out forwards',
+        'rubber-bounce': 'rubberBounce 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite var(--delay)',
       },
       keyframes: {
         wave: {
@@ -55,6 +56,20 @@ export default {
           '0%': { transform: 'scale(1)', opacity: '1' },
           '50%': { transform: 'scale(1.5)', opacity: '0.8' },
           '100%': { transform: 'scale(2)', opacity: '0' },
+        },
+        rubberBounce: {
+          '0%': { transform: 'translate(0, 0) scale(0)', opacity: '0' },
+          '5%': { transform: 'translate(0, 0) scale(1)', opacity: '1' },
+          '10%': { transform: 'translate(calc(var(--horizontal) * 0.3), calc(var(--vertical) * -0.5))', opacity: '1' },
+          '20%': { transform: 'translate(calc(var(--horizontal) * 0.6), var(--vertical))', opacity: '1' },
+          '30%': { transform: 'translate(calc(var(--horizontal) * 0.9), calc(var(--vertical) * -0.3))', opacity: '1' },
+          '40%': { transform: 'translate(calc(var(--horizontal) * 1.2), var(--vertical))', opacity: '1' },
+          '50%': { transform: 'translate(calc(var(--horizontal) * 0.9), calc(var(--vertical) * -0.1))', opacity: '1' },
+          '60%': { transform: 'translate(calc(var(--horizontal) * 0.6), var(--vertical))', opacity: '1' },
+          '70%': { transform: 'translate(calc(var(--horizontal) * 0.3), calc(var(--vertical) * -0.05))', opacity: '1' },
+          '80%': { transform: 'translate(0, var(--vertical))', opacity: '1' },
+          '90%': { transform: 'translate(calc(var(--horizontal) * -0.3), calc(var(--vertical) * -0.02))', opacity: '1' },
+          '100%': { transform: 'translate(calc(var(--horizontal) * -0.5), var(--vertical))', opacity: '1' },
         },
       },
     },
