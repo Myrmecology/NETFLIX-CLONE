@@ -17,8 +17,18 @@ const Footer = () => {
             <a href="#" className="hover:animate-ping hover:scale-[1.75] hover:rotate-[20deg] hover:skew-y-[15deg] hover:text-rose-600 hover:shadow-[0_0_80px_30px_#ff0000] hover:invert hover:contrast-[300%] transition-all duration-700">
               NETFLIX
             </a>
-            <a href="#" className="hover:animate-bounce hover:text-pink-500 hover:scale-150 hover:rotate-6 hover:shadow-[0_0_20px_#ff00ff] hover:saturate-200 hover:skew-y-3 transition-all duration-300">
+            {/* Bouncing balls effect on "Talk To Justin" */}
+            <a href="#" className="relative inline-block group hover:text-pink-500 transition-all duration-300">
               Talk To Justin
+              <span className="absolute inset-0 pointer-events-none">
+                <span className="absolute w-2 h-2 bg-red-500 rounded-full opacity-0 group-hover:animate-bounce-out group-hover:opacity-100 left-1/2 top-1/2 [--tx:30px] [--ty:-40px]" />
+                <span className="absolute w-2 h-2 bg-blue-500 rounded-full opacity-0 group-hover:animate-bounce-out group-hover:opacity-100 group-hover:delay-75 left-1/2 top-1/2 [--tx:-30px] [--ty:-35px]" />
+                <span className="absolute w-2 h-2 bg-green-500 rounded-full opacity-0 group-hover:animate-bounce-out group-hover:opacity-100 group-hover:delay-150 left-1/2 top-1/2 [--tx:40px] [--ty:10px]" />
+                <span className="absolute w-2 h-2 bg-yellow-500 rounded-full opacity-0 group-hover:animate-bounce-out group-hover:opacity-100 group-hover:delay-100 left-1/2 top-1/2 [--tx:-40px] [--ty:15px]" />
+                <span className="absolute w-2 h-2 bg-purple-500 rounded-full opacity-0 group-hover:animate-bounce-out group-hover:opacity-100 group-hover:delay-200 left-1/2 top-1/2 [--tx:0px] [--ty:-50px]" />
+                <span className="absolute w-2 h-2 bg-pink-500 rounded-full opacity-0 group-hover:animate-bounce-out group-hover:opacity-100 group-hover:delay-300 left-1/2 top-1/2 [--tx:20px] [--ty:40px]" />
+                <span className="absolute w-2 h-2 bg-orange-500 rounded-full opacity-0 group-hover:animate-bounce-out group-hover:opacity-100 group-hover:delay-250 left-1/2 top-1/2 [--tx:-20px] [--ty:35px]" />
+              </span>
             </a>
             <a href="#" className="hover:animate-pulse hover:text-orange-500 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,100,0,0.7)] hover:contrast-125 transition-all duration-300">
               Jobs
