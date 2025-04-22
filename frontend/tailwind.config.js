@@ -14,6 +14,10 @@ export default {
         'spiral': 'spiral 2s ease-in-out infinite',
         'firework': 'firework 1.5s ease-out forwards',
         'rubber-bounce': 'rubberBounce 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite var(--delay)',
+        'tornado-spin': 'tornadoSpin 2s linear infinite',
+        'tornado-spin-fast': 'tornadoSpin 1.5s linear infinite',
+        'tornado-spin-faster': 'tornadoSpin 1s linear infinite',
+        'debris-fly': 'debrisFly 2s ease-out infinite var(--delay)',
       },
       keyframes: {
         wave: {
@@ -70,6 +74,16 @@ export default {
           '80%': { transform: 'translate(0, var(--vertical))', opacity: '1' },
           '90%': { transform: 'translate(calc(var(--horizontal) * -0.3), calc(var(--vertical) * -0.02))', opacity: '1' },
           '100%': { transform: 'translate(calc(var(--horizontal) * -0.5), var(--vertical))', opacity: '1' },
+        },
+        tornadoSpin: {
+          '0%': { transform: 'rotate(0deg) scale(1, 1)' },
+          '100%': { transform: 'rotate(360deg) scale(1, 1)' },
+        },
+        debrisFly: {
+          '0%': { transform: 'translate(0, 0) rotate(0deg)', opacity: '0' },
+          '10%': { transform: 'translate(0, -5px) rotate(30deg)', opacity: '1' },
+          '50%': { transform: 'translate(var(--tx), var(--ty)) rotate(180deg)', opacity: '0.8' },
+          '100%': { transform: 'translate(calc(var(--tx) * 2), calc(var(--ty) * 1.5)) rotate(360deg)', opacity: '0' },
         },
       },
     },

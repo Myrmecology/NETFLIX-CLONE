@@ -36,8 +36,24 @@ const Footer = () => {
                 <span className="absolute w-3 h-3 bg-rose-500 rounded-full opacity-0 group-hover:animate-rubber-bounce group-hover:opacity-100 left-1/2 top-1/2 [--horizontal:-140px] [--vertical:40px] [--delay:600ms]" />
               </span>
             </a>
-            <a href="#" className="hover:animate-pulse hover:text-orange-500 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,100,0,0.7)] hover:contrast-125 transition-all duration-300">
+            {/* Tornado effect on "Jobs" */}
+            <a href="#" className="relative group hover:text-orange-500 transition-all duration-300">
               Jobs
+              <span className="absolute z-10 inset-0 pointer-events-none">
+                {/* Tornado funnel */}
+                <span className="absolute w-16 h-24 left-1/2 bottom-0 -translate-x-1/2 opacity-0 group-hover:opacity-100">
+                  {/* Tornado layers */}
+                  <span className="absolute w-16 h-16 bg-gradient-to-t from-transparent via-gray-500/30 to-transparent rounded-full animate-tornado-spin group-hover:animate-tornado-spin" />
+                  <span className="absolute w-12 h-12 left-2 bg-gradient-to-t from-transparent via-gray-400/40 to-transparent rounded-full animate-tornado-spin-fast group-hover:animate-tornado-spin-fast" />
+                  <span className="absolute w-8 h-8 left-4 bg-gradient-to-t from-transparent via-gray-300/50 to-transparent rounded-full animate-tornado-spin-faster group-hover:animate-tornado-spin-faster" />
+                  {/* Debris particles */}
+                  <span className="absolute w-2 h-2 bg-gray-600 rounded-full opacity-0 group-hover:animate-debris-fly group-hover:opacity-100 left-1/2 bottom-0 [--tx:40px] [--ty:-60px] [--delay:0ms]" />
+                  <span className="absolute w-1 h-1 bg-gray-500 rounded-full opacity-0 group-hover:animate-debris-fly group-hover:opacity-100 left-1/2 bottom-0 [--tx:-30px] [--ty:-50px] [--delay:100ms]" />
+                  <span className="absolute w-2 h-2 bg-gray-400 rounded-full opacity-0 group-hover:animate-debris-fly group-hover:opacity-100 left-1/2 bottom-0 [--tx:20px] [--ty:-70px] [--delay:200ms]" />
+                  <span className="absolute w-1 h-1 bg-gray-600 rounded-full opacity-0 group-hover:animate-debris-fly group-hover:opacity-100 left-1/2 bottom-0 [--tx:-40px] [--ty:-40px] [--delay:300ms]" />
+                  <span className="absolute w-2 h-2 bg-gray-300 rounded-full opacity-0 group-hover:animate-debris-fly group-hover:opacity-100 left-1/2 bottom-0 [--tx:30px] [--ty:-80px] [--delay:400ms]" />
+                </span>
+              </span>
             </a>
             <a href="#" className="hover:animate-bounce hover:text-red-500 hover:scale-125 hover:shadow-[0_0_20px_red] transition-all duration-300">
               Project 3
