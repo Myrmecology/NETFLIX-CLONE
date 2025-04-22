@@ -14,7 +14,9 @@ import { protectRoute } from "./middleware/protectRoute.js";
 const app = express();
 
 const PORT = ENV_VARS.PORT;
-const __dirname = path.resolve();
+import { fileURLToPath } from 'node:url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 app.use(express.json()); // will allow us to parse req.body
 app.use(cookieParser());
